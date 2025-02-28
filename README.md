@@ -18,6 +18,19 @@ The data is adapted and cleaned from empty values or missing information in the 
 The final analysis is carried out by comparing the final outputs with the analysis from the given
 Eurocontrol Performance Review Reports(PRR) from 2016 and 2017, where they assess the pan-European air traffic by using some of these KPIs.
 
+## Departure punctuality KPI01
+This KPI is used to measure the percentage of IFR flights departing from the gate on-time as a
+percentage of different variants that correspond to different windows of time and delay of 5 and 15
+minutes.
+
+| |ECAC|UK|France|Netherlands|Germany|Spain|
+|Variant| 1A| 39.79| 38.26| 35.14| 38.87| 42.74| 39.8|
+|Variant| 1B| 23.74| 21.66| 20.86| 24.5| 27| 24.47|
+|Variant| 2A| 77.47| 74.10| 71.02| 79.51| 81.1| 75.45|
+|Variant| 2B| 50.79| 46.23| 47.38| 54.77| 58.83| 52.8|
+
+
+
 
 
 
