@@ -91,3 +91,20 @@ The final results show that Netherlands has the most efficient use of airspace d
 
 ## Filed flight plan en-route extension KPI05
 This KPI is similar to the previous one, but instead of filed flight plans, it uses the actual flown trajectories data to calculate the excess distance.
+
+| |ECAC|UK|France|Netherlands|Germany|Spain|
+| --- | --- | --- | --- | --- | --- | --- |
+|Actual trajectory en-route extension[%] | 8.65| 7.82| 9.07| 7.14| 8.73| 9.44|
+
+| |EGLL|LFPG|EHAM|EDDF|LEMD|
+| --- | --- | --- | --- | --- | --- |
+|Actual trajectory en-route extension[%]| 5.28| 6.2| 6.87| 6.89| 6.86|
+
+![image](https://github.com/user-attachments/assets/3cda4f4a-0bb3-482d-928c-45c51fb16bb9)
+
+![image](https://github.com/user-attachments/assets/39bd9cb9-8991-4a49-9628-cb33fffc9fdf)
+
+
+
+
+
