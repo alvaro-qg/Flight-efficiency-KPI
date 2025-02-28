@@ -38,5 +38,6 @@ minutes.
 |Variant 2B| 47.7| 41.01| 56.13| 63.1 |58.58|
 
 
+![image](https://github.com/user-attachments/assets/d1e28bd0-c72c-49e4-a2f4-f692dce80780)
 
 
