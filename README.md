@@ -30,8 +30,12 @@ minutes.
 |Variant 2A| 77.47| 74.10| 71.02| 79.51| 81.1| 75.45|
 |Variant 2B| 50.79| 46.23| 47.38| 54.77| 58.83| 52.8|
 
-Table 1: Departure punctuality percentages in countries
-
+| |EGLL|LFPG|EHAM|EDDF|LEMD|
+| --- | --- | --- | --- | --- | --- |
+|Variant 1A| 31.56| 30.06| 38.96| 44.57 |53.73|
+|Variant 1B| 20.15| 16.57| 24.93| 29.52 |28.92|
+|Variant 2A| 64| 60 79.02| 82.78| 89.37|
+|Variant 2B| 47.7| 41.01| 56.13| 63.1 |58.58|
 
 
 
