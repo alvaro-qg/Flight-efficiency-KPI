@@ -24,6 +24,7 @@ percentage of different variants that correspond to different windows of time an
 minutes.
 
 | |ECAC|UK|France|Netherlands|Germany|Spain|
+| --- | --- | --- | --- | --- | --- | --- |
 |Variant| 1A| 39.79| 38.26| 35.14| 38.87| 42.74| 39.8|
 |Variant| 1B| 23.74| 21.66| 20.86| 24.5| 27| 24.47|
 |Variant| 2A| 77.47| 74.10| 71.02| 79.51| 81.1| 75.45|
