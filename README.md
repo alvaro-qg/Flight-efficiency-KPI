@@ -143,26 +143,22 @@ This KPI calculates the amount of distance and time that the airplane is in leve
 
 ![image](https://github.com/user-attachments/assets/17906fb3-cad3-42a1-a0fe-ecfe8b37a21b)
 
-1. Identify which segment has the maximum flight level on its first point for each flight. This
-is an easy operation that can be done with pandas package by grouping each flightID and
-finding the index of the maximum flight level at FLBegin field.
-2. With the maximum value of flight level, find all the corresponding cruise phase. By mergin
-both tables, it should be posible to delete the full cruise and descent phases from the dataframe
-by creating a mask of NaN values.
-3. Calculate the time contribution in minutes that has each segment on the same flight with the
-dates difference between the segment beginning and ending points.
+1. Identify which segment has the maximum flight level on its first point for each flight.
+2. With the maximum value of flight level, find all the corresponding cruise phase. Then the full cruise and descent phases are deleted.
+3. Calculate the time contribution in minutes that has each segment on the same flight.
 4. Calculate the distances from the origin airport for each flight by using their coordinates and
 GCD function
-5. Separate the level flight segments with their corresponding status equal to 2. Also, apply
-the condition that all segments must be inside the analysis radius around the airport of 200
-NM as shown in the figure 13 as a visualization. Therefore, the top of climb is the maximum
-flight level of the entire route, and as an approximation, the first segment of the cruise phase
-is not taken into account even if a small portion falls inside the cylinder it is not calculated
-as it can be visualized in 13.
+5. Separate the level flight segments. Also, apply the condition that all segments must be inside the analysis radius around the airport of 200 NM as shown in the previous visualization. Therefore, the top of climb is the maximum flight level of the entire route, and as an approximation, the first segment of the cruise phase is not taken into account even if a small portion falls inside the cylinder it is not calculated.
 6. Calculate the sum of all segments time and distance contributions for each flight.
-7. Finally calculate the total average of all flights for the ECAC area. Repeat for countries
-and airports values, possibly by using the same dataFrame values stored from the previous
-calculation.
+7. Finally calculate the total average of all flights for the ECAC area. Repeat for countries and airports values.
+
+![image](https://github.com/user-attachments/assets/cc96b00c-199a-4544-a310-1840a132a755)
+
+
+
+
+
+
 
 
 
