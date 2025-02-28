@@ -73,7 +73,7 @@ later.
 filed(or actual) distance minus the GCD distance divided by the GCD distance again, and
 expressed as a percentage.
 
-$$100*((filed|actual distance − GCD distance)/GCD distance)$$
+$$100*((Distance − GCD distance)/GCD distance)$$
 
 
 
