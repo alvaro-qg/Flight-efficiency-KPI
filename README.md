@@ -44,5 +44,20 @@ minutes.
 
 ![image](https://github.com/user-attachments/assets/794bd31a-39a0-4803-923d-4febc623a394)
 
+The previous figures show that most of the flights are punctual within the time window of 15 minutes, which is the definition of Variant 2A. In case of the other variants, it seems that as the time window for flights is reduced, the less flights are punctual under these constraints. For example, the flights from the most restrictive variant 2B, are punctual with just around 20 % of all scheduled flights in all ECAC airspace. Regarding the derived KPIs for countries and airports, it can be observed that the similar trend applies. On the one hand, it seems that Germany has the best quality in its overall airspace but on the other hand, the best quality can be found in another country which is not Germany but in Spain at the airport of Madrid.
+
+## Filed flight plan en-route extension KPI04
+This KPI measures the en-route horizontal flight efficiency contained in a set of filed flight plans
+crossing an airspace volume. It is measured in percentage of excess distance.
+
+
+
+
+
+
+
+
+
+
 
 
