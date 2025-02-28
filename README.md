@@ -75,8 +75,19 @@ expressed as a percentage.
 
 $$100*((Distance − GCD distance)/GCD distance)$$
 
+| |ECAC|UK|France|Netherlands|Germany|Spain|
+| --- | --- | --- | --- | --- | --- | --- |
+|Filed flight plan en-route extension[%] | 9.02 |7.78| 9.5| 7.11| 9.24| 9.98|
 
+| |EGLL|LFPG|EHAM|EDDF|LEMD|
+| --- | --- | --- | --- | --- | --- |
+|Filed flight plan en-route extension[%] | 5.17 | 6.19 | 6.76 | 7.15 | 7.04|
 
+![image](https://github.com/user-attachments/assets/06e4b669-f5af-4648-9076-173573d280fe)
 
+![image](https://github.com/user-attachments/assets/a779bf71-3de2-4c2e-a9d5-de3fde863ed4)
 
+The final results show that Netherlands has the most efficient use of airspace during flight planning, and Spain the worst. However, when looking at their major airports, it can be found that their efficiency is better, which would mean that each State may prioritize these airports rather than other local ones, as for example Paris airport(LFPG) which efficiency differs around 3% from the country airspace. Also, the threshold line indicates which countries diverge most of the average European airspace which in this case would be France, Germany and Spain. 
 
+## Filed flight plan en-route extension KPI05
+This KPI is similar to the previous one, but instead of filed flight plans, it uses the actual flown trajectories data to calculate the excess distance.
