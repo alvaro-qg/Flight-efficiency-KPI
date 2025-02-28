@@ -154,11 +154,46 @@ GCD function
 
 ![image](https://github.com/user-attachments/assets/cc96b00c-199a-4544-a310-1840a132a755)
 
+![image](https://github.com/user-attachments/assets/6dc06829-39da-4b07-a503-fad06ac3edea)
 
+The previous figures show that Spain has the most issues regarding level-off flight both in time
+and distance during climb phases operations, specifically Madrid airport(LEMD), which show a
+visible difference respect the ECAC average. In contrast, the rest of the countries seem to be more
+balanced. Since the method that has been applied in this project is coarser and
+more inaccurate, it very likely that the results are just higher. Apparently, London and Heathrow airport(EGLL) should have the highest average level-off distances and times.
 
+## Level-off durnig descent KPI19
+This KPI is similar to its counterpart, but instead it is related with the descent phase. As in climb
+phase, level-flight should be avoided because of the same reasons, therefore the same coarse approach is applied.
 
+![image](https://github.com/user-attachments/assets/043e66f0-820d-4b03-b329-92dd28bc4ebb)
 
+![image](https://github.com/user-attachments/assets/21841289-5170-4fdc-a33c-2e0cb2595ab2)
 
+In this case, France has the most issues regarding descent level-off flights, with the highest average
+both in time and distance of them all. Also, the capital airport of Paris(LFPG), is at the top. In
+this case, if the results are compared again with the Eurocontrol statistics, the Heathrow airport
+should have the highest distance and time as it its country. However, one important remark is
+that the descent operations are more subject to level-off flights than climb phases as stated by
+Eurocontrol, and it seems that this behaviour still applies on the calculated values.
 
+## Conclusions
+In this project different KPIs have been calculated and analyzed and also additional derived KPIs for
+the specific countries and airports with the support of different values and graphical representations
+that have been created and other that come from other sources as Eurocontrol Performance Review
+Reports to compare them.
 
+It has been observed that when the approaches proposed by ICAO are changed, the results are
+partially distant from the statistics that the Eurocontrol reports present. For example, KPI 01 is
+pretty straightforward and the values are very similar between the two, but in contrast the KPI
+17 is significantly distant. But, aside from that, it can also be noted that Eurocontrol has used
+other types of data from different sources, and the available DDR2 files had simpler information
+texts that limit the possibilities to apply new algorithms or methodologies. Probably, the most
+trustworthy and realistic values are from KPI 01 and KPI 14, followed by the KPI 04 and KPI 05
+which values are different but follow the same trends.
+
+Finally, from the point of view of data analysis, it could also be interesting to create new graphs
+that would give a better understanding and visualization between the different KPIs and their
+counterparts, such as for example KPI04 and KPI05. However, in the majority of cases it is not
+feasible due to the computation times of the large datasets and operations.
 
