@@ -104,7 +104,65 @@ This KPI is similar to the previous one, but instead of filed flight plans, it u
 
 ![image](https://github.com/user-attachments/assets/39bd9cb9-8991-4a49-9628-cb33fffc9fdf)
 
+The results from the actual trajectories show similar trends as seen before with the flight plans
+ones, however it can be found that the efficiency has improved slightly in all the ECAC airspace,
+countries and airports if not just maintained. This is a good indicator according to ICAO, which
+indicates that there shouldn’t be a big lap between the values of flight plans with the actual
+trajectories. Also, they indicate which countries are below the
+Eurocontrol area average, which include Spain and France as it can be translated as that Spain
+and France are above the average ECAC inefficiencty, therefore having a worse airspace efficiency.
 
+## Arrival punctuality KPI14
+The arrival punctuality is very similar to the previous KPI01 counterpart, but with the flights
+arriving to its gate at their destination instead.
+
+| |ECAC|UK|France|Netherlands|Germany|Spain|
+| --- | --- | --- | --- | --- | --- | --- |
+|Variant 1A| 31.65| 27.3| 27.58| 28.64| 34.7| 32.87|
+|Variant 1B| 17.53| 15.24| 14.7| 17.09| 19.6| 18.26|
+|Variant 2A| 71.76| 64.55| 67.29| 71.29| 74.03| 73.37|
+|Variant 2B| 43.42| 41.95| 39.96| 50| 43.88| 45.03|
+
+| |EGLL|LFPG|EHAM|EDDF|LEMD|
+| --- | --- | --- | --- | --- | --- |
+|Variant 1A| 16.03| 26.14| 28.86| 32.51| 36.78|
+|Variant 1B| 10.44| 17.05| 17.18| 20.61| 23|
+|Variant 2A| 52.79| 65.48| 71.54| 70.1| 73.75|
+|Variant 2B| 43.82| 49.72| 52.48| 48.48| 49.43|
+
+![image](https://github.com/user-attachments/assets/51e238d8-9d62-45b7-be8f-0dab220c3902)
+
+![image](https://github.com/user-attachments/assets/3a8220d2-aceb-4833-af6c-f5a24f609d10)
+
+![image](https://github.com/user-attachments/assets/a4ce01ca-390d-42b3-943c-68262bfff8d4)
+
+The variant 2A is the one with most percentage of punctual flights. This behaviour is also linked to the Eurocontrol reports, which show a similar percentage for the same variant over the past years. In this case, the best quality airport is still Madrid airport and the best airspace quality corresponds to Germany. Regarding the differences between this KPI and its departures counterpart, it can be observed clearly that the punctuality is worse at arrival. According to Eurocontrol, this is because the arrival punctuality is linked to departure delay, which have also their specific KPIs, but that is out of scope for this study.
+
+## Level-off during climb KPI17
+This KPI calculates the amount of distance and time that the airplane is in level-flight during climb phase from real IFR flights. Ideally, there should not be level flight during climb because of fuel burn and noise. This KPI requires many inputs and data that is not available, so a coarse approach has been carried out.
+
+![image](https://github.com/user-attachments/assets/17906fb3-cad3-42a1-a0fe-ecfe8b37a21b)
+
+1. Identify which segment has the maximum flight level on its first point for each flight. This
+is an easy operation that can be done with pandas package by grouping each flightID and
+finding the index of the maximum flight level at FLBegin field.
+2. With the maximum value of flight level, find all the corresponding cruise phase. By mergin
+both tables, it should be posible to delete the full cruise and descent phases from the dataframe
+by creating a mask of NaN values.
+3. Calculate the time contribution in minutes that has each segment on the same flight with the
+dates difference between the segment beginning and ending points.
+4. Calculate the distances from the origin airport for each flight by using their coordinates and
+GCD function
+5. Separate the level flight segments with their corresponding status equal to 2. Also, apply
+the condition that all segments must be inside the analysis radius around the airport of 200
+NM as shown in the figure 13 as a visualization. Therefore, the top of climb is the maximum
+flight level of the entire route, and as an approximation, the first segment of the cruise phase
+is not taken into account even if a small portion falls inside the cylinder it is not calculated
+as it can be visualized in 13.
+6. Calculate the sum of all segments time and distance contributions for each flight.
+7. Finally calculate the total average of all flights for the ECAC area. Repeat for countries
+and airports values, possibly by using the same dataFrame values stored from the previous
+calculation.
 
 
 
