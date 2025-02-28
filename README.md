@@ -53,7 +53,6 @@ This KPI measures the en-route horizontal flight efficiency contained in a set o
 
 1. Calculation of all points distances from the origin or departure coordinates of the correspond-
 ing airport for each flight with their given latitude/longitude points
-
 2. Classification of the points if they are inside of the 40 NM radius cylinder or not for each
 flight.
 3. Find the first segment that crosses the cylinder perimeter. This is done by restricting the
@@ -62,7 +61,7 @@ first point P1 or P3,for departure or arrival respectively, of any segment to be
 4. Find the coordinates of point O1 or O2 for departure or arrival respectively. This is done
 by calculating the bearing of the previous segment that has been found with the two known
 points. Then, with the known distance of the segment inside the cylinder, the new middle
-point in the limit of the cylinder can be found as it can be visualized in 5.
+point at the limit of the cylinder.
 5. The distance of the GCD route can be calculate between the previously calculated points 01
 and 02 for departure and arrival respectively using a geodesic function already implemented.
 Then, the total distance of the filed route(or actual route for the next KPI) can be calculated
@@ -74,7 +73,7 @@ later.
 filed(or actual) distance minus the GCD distance divided by the GCD distance again, and
 expressed as a percentage.
 
-
+$100*((filed|actual distance − GCD distance)/GCD distance)$
 
 
 
